@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Board Game Rating Application</title>
+</head>
+<body>
+    <h3>Spring Application Test for Board Game Ratings</h3>
+    <form action="/gameRatings/new" method="post">
+        <div class="form-group">
+            <label for="gameName">게임 이름</label>
+            <input type="text" id="gameName" name="gameName" placeholder="게임 이름을 입력하세요">
+        </div>
+        <div class="form-group">
+            <label for="userName">사용자 이름</label>
+            <input type="text" id="userName" name="userName" placeholder="사용자 이름을 입력하세요">
+        </div>
+        <div class="form-group">
+            <label for="rating">평점</label>
+            <div id="rating">
+                <input type="radio" name="rating" value="1.0">1
+                <input type="radio" name="rating" value="2.0">2
+                <input type="radio" name="rating" value="3.0">3
+                <input type="radio" name="rating" value="4.0">4
+                <input type="radio" name="rating" value="5.0">5
+            </div>
+        </div>
+        <input type="submit" value="등록하기">
+    </form>
+</body>
+</html>

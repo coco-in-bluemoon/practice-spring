@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Board Game Rating Application</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>#ID</th>
+            <th>사용자</th>
+            <th>게임</th>
+            <th>평점</th>
+        </thead>
+        <tbody>
+            <tr th:each="rating : ${ratings}">
+                <td th:text="${rating.id}"></td>
+                <td th:text="${rating.userName}"></td>
+                <td th:text="${rating.gameName}"></td>
+                <td th:text="${rating.rating}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
