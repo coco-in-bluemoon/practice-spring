@@ -44,9 +44,3 @@ atlassian-ide-plugin.xml
 
 # H2 Database
 h2/
-
-# gradle
-gradle/
-gradlew
-gradlew.bat
-
